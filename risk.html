@@ -5,6 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risk Management</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.02);
+        }
+
+        .definition, .key-points, .examples, .resources {
+            background: #d1ecf1;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -28,30 +124,137 @@
         <section class="grid-container">
             <div class="grid-item">
                 <h2>Understanding Risk</h2>
-                <p>Risk is an inherent part of trading, and understanding it is crucial for long-term success.</p>
+                <p>Risk is an inherent part of trading, and understanding it is crucial for long-term success. Every trade carries a certain level of risk, which is the potential for loss relative to the expected return. This could stem from market volatility, poor timing, or unforeseen events that affect asset prices. Understanding different types of risks—such as market risk, liquidity risk, credit risk, and operational risk—allows traders to develop strategies to mitigate these risks effectively. For instance, market risk refers to the potential losses due to fluctuations in market prices. Liquidity risk involves the difficulty of buying or selling an asset without causing a significant impact on its price. Credit risk pertains to the possibility of a counterparty defaulting on a trade. By recognizing these risks, traders can make more informed decisions and develop a comprehensive risk management strategy that aligns with their trading goals.</p>
                 <div class="definition">
-                    <strong>Definition:</strong> Risk refers to the potential for loss in trading and must be managed effectively.
+                    <strong>Definition:</strong> Risk refers to the potential for loss in trading and must be managed effectively. It is crucial to assess the risk associated with each trade before entering a position.
+                </div>
+                <div class="examples">
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li>A trader buys shares of a technology company, but the stock price drops due to unexpected earnings reports, illustrating market risk.</li>
+                        <li>A trader attempts to sell a large position in a thinly traded stock, only to find that there are not enough buyers, demonstrating liquidity risk.</li>
+                        <li>A trader enters into a contract with a counterparty who later defaults, showcasing credit risk.</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <strong>Resources:</strong>
+                    <ul>
+                        <li><a href="https://www.investopedia.com/terms/r/risk.asp">Investopedia: Understanding Risk</a></li>
+                        <li><a href="https://www.cnbc.com/2020/03/16/what-is-market-risk.html">CNBC: What is Market Risk?</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="grid-item">
                 <h2>Risk-Reward Ratio</h2>
-                <p>Calculating the risk-reward ratio helps in making informed decisions about potential trades.</p>
+                <p>Calculating the risk-reward ratio helps in making informed decisions about potential trades. This ratio compares the potential profit of a trade to the potential loss, allowing traders to assess whether a trade is worth taking. A favorable risk-reward ratio is typically considered to be at least 1:2, meaning that for every dollar risked, the potential reward should be at least two dollars. Understanding this ratio helps traders to prioritize trades that offer the best potential for profit relative to the risk involved. For example, if a trader risks $100 to potentially gain $300, the risk-reward ratio is 1:3, which is favorable. Traders should always calculate this ratio before entering a trade to ensure that the potential reward justifies the risk taken.</p>
                 <div class="key-points">
-                    <strong>Key Points:</strong> A favorable risk-reward ratio is essential for successful trading strategies.
+                    <strong>Key Points:</strong> A favorable risk-reward ratio is essential for successful trading strategies. Traders should always calculate this ratio before entering a trade to ensure that the potential reward justifies the risk taken.
+                </div>
+                <div class="examples">
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li>A trader sets a target price of $60 for a stock purchased at $50, with a stop-loss at $48. The risk is $2, and the potential reward is $10, resulting in a risk-reward ratio of 1:5.</li>
+                        <li>Another trader enters a trade with a target of $100 and a stop-loss at $90, risking $10 to potentially gain $20, yielding a risk-reward ratio of 1:2.</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <strong>Resources:</strong>
+                    <ul>
+                        <li><a href="https://www.investopedia.com/terms/r/riskrewardratio.asp">Investopedia: Risk-Reward Ratio</a></li>
+                        <li><a href="https://www.tradingsim.com/blog/risk-reward-ratio/">TradingSim: Understanding Risk-Reward Ratio</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="grid-item">
                 <h2>Setting Stop-Loss Orders</h2>
-                <p>Stop-loss orders are essential for limiting potential losses and protecting your capital.</p>
+                <p>Stop-loss orders are essential for limiting potential losses and protecting your capital. A stop-loss order automatically sells a security when it reaches a certain price, helping traders to exit losing positions before they incur significant losses. This tool is vital for risk management, as it allows traders to define their risk tolerance and stick to their trading plan. Setting stop-loss orders based on technical analysis, such as support and resistance levels, can enhance their effectiveness. For instance, if a trader buys a stock at $100 and sets a stop-loss at $95, they limit their potential loss to $5 per share. This disciplined approach helps traders avoid emotional decision-making during market fluctuations.</p>
                 <div class="definition">
-                    <strong>Definition:</strong> A stop-loss order automatically sells a security when it reaches a certain price.
+                    <strong>Definition:</strong> A stop-loss order automatically sells a security when it reaches a certain price. It is a critical tool for managing risk and protecting capital in trading.
+                </div>
+                <div class="examples">
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li>A trader buys a stock at $100 and sets a stop-loss order at $95, limiting their potential loss to $5 per share.</li>
+ <li>Another trader uses a trailing stop-loss that adjusts as the stock price increases, allowing them to lock in profits while still protecting against downside risk. For example, if the stock rises to $120, the trailing stop-loss might be set at $115, ensuring a minimum profit of $15 per share.</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <strong>Resources:</strong>
+                    <ul>
+                        <li><a href="https://www.investopedia.com/terms/s/stop-lossorder.asp">Investopedia: Stop-Loss Order</a></li>
+                        <li><a href="https://www.thebalance.com/what-is-a-stop-loss-order-3576100">The Balance: What is a Stop-Loss Order?</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Diversification</h2>
+                <p>Diversification is a risk management strategy that involves spreading investments across various assets to reduce exposure to any single asset or risk. By diversifying a portfolio, traders can mitigate the impact of poor performance in one area by balancing it with gains in another. This strategy is particularly effective in volatile markets, where certain sectors may experience significant fluctuations. Understanding the correlation between different assets is crucial for effective diversification. For instance, if a trader invests solely in technology stocks, a downturn in that sector could lead to substantial losses. However, by also investing in bonds or commodities, the overall portfolio risk can be reduced.</p>
+                <div class="definition">
+                    <strong>Definition:</strong> Diversification is the practice of spreading investments across different assets to reduce risk. It helps to minimize the impact of a single asset's poor performance on the overall portfolio.
+                </div>
+                <div class="examples">
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li>A trader invests in a mix of stocks, bonds, and commodities to create a balanced portfolio that can withstand market fluctuations.</li>
+                        <li>Another trader diversifies within the stock market by investing in different sectors, such as technology, healthcare, and consumer goods, to reduce sector-specific risk.</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <strong>Resources:</strong>
+                    <ul>
+                        <li><a href="https://www.investopedia.com/terms/d/diversification.asp">Investopedia: Diversification</a></li>
+                        <li><a href="https://www.forbes.com/advisor/investing/diversification/">Forbes: The Importance of Diversification</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Regular Review and Adjustment</h2>
+                <p>Regularly reviewing and adjusting your trading strategy is essential for effective risk management. Markets are dynamic, and what works today may not work tomorrow. By analyzing past trades, assessing performance, and adjusting risk parameters, traders can stay aligned with their goals and market conditions. This process involves evaluating the effectiveness of stop-loss orders, risk-reward ratios, and overall portfolio diversification. For example, a trader might find that a particular strategy is underperforming and decide to either refine it or replace it with a new approach. Keeping a trading journal can facilitate this process by providing insights into past performance and decision-making patterns.</p>
+                <div class="key-points">
+                    <strong>Key Points:</strong> Regular review and adjustment of trading strategies help traders adapt to changing market conditions and improve their risk management practices. Keeping a trading journal can facilitate this process by providing insights into past performance and decision-making patterns.
+                </div>
+                <div class="examples">
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li>A trader reviews their performance quarterly and notices that certain strategies are underperforming, prompting them to adjust their approach or explore new strategies.</li>
+                        <li>Another trader analyzes their stop-loss placements and realizes they need to adjust them based on recent market volatility to better protect their capital.</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <strong>Resources:</strong>
+                    <ul>
+                        <li><a href="https://www.investopedia.com/articles/trading/061015/how-review-your-trading-strategy.asp">Investopedia: How to Review Your Trading Strategy</a></li>
+                        <li><a href="https://www.tradingsim.com/blog/trading-journal/">TradingSim: The Importance of a Trading Journal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Advanced Risk Management Techniques</h2>
+                <p>Advanced risk management techniques involve more sophisticated strategies that can help traders navigate complex market conditions. These techniques include options strategies, hedging, and the use of algorithms to manage risk dynamically. For instance, options can be used to create protective puts, which allow traders to limit potential losses while still participating in upside potential. Hedging involves taking an offsetting position in a related asset to reduce exposure to risk. This could mean shorting a stock that you own or investing in inverse ETFs that move in the opposite direction of your primary investments. Additionally, algorithmic trading can help manage risk by automatically adjusting positions based on predefined criteria, such as volatility or market trends. Understanding and implementing these advanced techniques can significantly enhance a trader's ability to manage risk effectively.</p>
+                <div class="definition">
+                    <strong>Definition:</strong> Advanced risk management techniques are sophisticated strategies that help traders mitigate risk through various methods, including options, hedging, and algorithmic trading.
+                </div>
+                <div class="examples">
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li>A trader uses a protective put strategy by purchasing a put option for a stock they own, ensuring that if the stock price falls below a certain level, they can sell it at a predetermined price, thus limiting their losses.</li>
+                        <li>Another trader hedges their portfolio by shorting a correlated stock, which helps offset potential losses in their primary investment during market downturns.</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <strong>Resources:</strong>
+                    <ul>
+                        <li><a href="https://www.investopedia.com/terms/p/protectiveput.asp">Investopedia: Protective Put</a></li>
+                        <li><a href="https://www.forbes.com/advisor/investing/hedging/">Forbes: Understanding Hedging</a></li>
+                        <li><a href="https://www.investopedia.com/terms/a/algorithmictrading.asp">Investopedia: Algorithmic Trading</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Trading Guide. All rights reserved.</p>
+        <p>&copy; 2024 Trading Guide. All rights reserved.</p>
     </footer>
 
 </body>
